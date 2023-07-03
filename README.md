@@ -1,2 +1,6 @@
 # 1number_guesser100
-A simple Python program where you have to guess a randomly generated number from 1-100!
+A simple Python number guessing game with a unique twist:
+
+You can determine the range you want to play in and how many attempts you would like to guess the number in.
+
+Hope you enjoy!
