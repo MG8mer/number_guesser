@@ -21,7 +21,11 @@ def number_guess():
                 print("Game over! You've exhausted your attempts")
                 print("")
                 print(f"The number was {rng_game}")
-                break
+                response = input("Wanna do it again? Y/N: ")
+                if response == 'Y':
+                    attempts = 0
+                else:
+                    break
             else:
                 try:
                     guess = int(input("Guess the number: "))
@@ -29,9 +33,8 @@ def number_guess():
                     attempts += 1
                     print(f"That wasn't an integer... You have {10 - attempts} attempts remaining")
                     print("")
-        if attempts == 10:
+        if attempts == 10 and response != 'Y':
             break
-            
 
         if guess > rng_game:
             if guess > 100:
@@ -59,6 +62,11 @@ def number_guess():
             print("You did it! You're a natural!!")
             print("")
             guess = None
-            break
+            response = input("Wanna do it again? Y/N: ")
+            if response == 'Y':
+                attempts = 0
+            else:
+                break
+            
 
 number_guess()
