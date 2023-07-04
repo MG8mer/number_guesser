@@ -1,4 +1,4 @@
-# 1number_guesser100
+# number_guesser
 A simple Python number guessing game with a unique twist:
 
 You can determine the range you want to play in and how many attempts you would like to guess the number in.
